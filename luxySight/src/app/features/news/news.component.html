@@ -1,0 +1,16 @@
+<div class="list">
+  <mat-accordion>
+    <mat-expansion-panel hideToggle *ngFor="let news of newsArray">
+    <mat-expansion-panel-header>
+    <mat-panel-title>
+    {{news['name']}}
+    </mat-panel-title>
+    <mat-panel-description>
+      {{news['objectID']}}
+    </mat-panel-description>
+    </mat-expansion-panel-header>
+    <p>{{news['excerpt']}}</p>
+    <a mat-stroked-button color="accent" (click)="openDialog(news['url'])">Link</a>
+    </mat-expansion-panel>
+  </mat-accordion>
+</div>

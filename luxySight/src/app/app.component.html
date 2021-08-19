@@ -1,0 +1,10 @@
+<mat-toolbar color="primary">
+  <span>Luxurynsight</span>
+  <span class="spacer"></span>
+  <button (click)="onLogout()" mat-raised-button color="accent" *ngIf="isLogin">Logout</button>
+</mat-toolbar>
+
+<router-outlet></router-outlet>
+<!-- <app-login></app-login>
+<app-news></app-news> -->
+
